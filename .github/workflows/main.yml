@@ -1,0 +1,36 @@
+name: MkDocs Build and Deploy
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支推送
+
+permissions:
+  contents: write  # 必须有，给 actions 写 gh-pages 的权限
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # 拉完整历史，避免 push 出错
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Build documentation
+        run: mkdocs build
+
+      - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: mkdocs gh-deploy --force  # 强推，防止 fast-forward 错误
