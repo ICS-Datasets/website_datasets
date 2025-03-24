@@ -1,0 +1,14 @@
+site_name: ZJU 云网智能安全实验室
+theme:
+  name: material
+  features:
+    - search.suggest
+nav:
+  - Home: index.md
+  - About: about.md
+  - Datasets: dataset.md
+  - Contact: contact.md
+plugins:
+  - search
+markdown_extensions:
+  - pymdownx.details
