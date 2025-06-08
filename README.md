@@ -6,7 +6,7 @@
 3. 在website_datasets这个directory新建一个终端。
 ```
 > git init // 初始化本地仓库
-> git remote add origin https://github.com/yourname/Dataset_website.git // 添加远程仓库
+> git remote add origin https://github.com/ICS-Datasets/website_datasets.git // 添加远程仓库
 > git pull origin main // 拉取远程仓库的文件
 // 终端一直开着，不用关了
 ```
