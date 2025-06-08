@@ -1,6 +1,7 @@
 # Dataset_website
 > This is a website sharing the Quark links of the datasets.
 ### ***How to update the links***
+> 先联系我给你添加权限
 1. 确保你的电脑上安装了git（没装的话上网找一下教程），可以了解一下git的一些知识，大致就是我们共享的是一个远程仓库，你自己电脑上有个本地仓库。
 2. 创建一个新的directory（name it website_datasets)
 3. 在website_datasets这个directory新建一个终端。
