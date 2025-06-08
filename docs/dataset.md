@@ -4,7 +4,7 @@
 
 ??? note "ICS-NAD Dataset"
     - Private access link
-    [ICS-NAD Dataset at Science Data Bank]（https://www.scidb.cn/en/s/mYFBfa）
+    [ICS-NAD Dataset at Science Data Bank](https://www.scidb.cn/en/s/mYFBfa)
 
 ??? note "dataset#2"
     - dataset_demo1  
