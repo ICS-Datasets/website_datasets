@@ -21,8 +21,7 @@
 ```
 > git add . // 把所有修改的文件添加到暂存区
 > git commit -m "update" // 提交到本地仓库，引号内写上你这次提交的说明
-> git push origin main --force // 强制push到远程仓库
-//不加force总会出现莫名其妙的不同步错误
+> git push origin main // push到远程仓库
 //所以请确保每一次都只去修改相关的md文件，不要动其他的，也不要随意的push和pull
 ```
 6. 等待一段时间，刷新一下网页，就可以看到你的链接了。
